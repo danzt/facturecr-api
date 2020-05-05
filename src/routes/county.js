@@ -4,7 +4,6 @@ import Odoo from '../odoo'
 const router = Router();
 
 router.get('/', (req, res, next) => {
-  console.log("params 1 >> ", req.query)
   const odoo = new Odoo({
     host: "api-stag.facturecr.com",
     port: 443,

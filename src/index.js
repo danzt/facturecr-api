@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // * Routes * //
 
-app.use('/clients', routes.client);
+app.use(['/clients', '/client'], routes.client);
 app.use('/countries', routes.country);
 app.use('/cantons', routes.county);
 app.use('/provinces', routes.province);
